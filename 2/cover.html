@@ -1,21 +1,32 @@
 <html>
   <head>
-    <script src="vendor/aframe.min.js"></script>
+    <script src="vendor/aframe-master.min.js"></script>
     <script src="vendor/aframe-stereo-component.min.js"></script>
+    <script src="vendor/play-on-click.js"></script>
+    <script src="vendor/hide-on-play.js"></script>
   </head>
   <body>
-    <a-scene antialias="true">
-        <!-- Paths to left and right images -->
-        <a-assets>
-          <img id="left" src="img/left.jpg">
-          <img id="right" src="img/right.jpg">
-        </a-assets>
-  
-        <!-- Camera -->
-        <a-entity camera look-controls position="0 0 0" stereocam="eye:left;"></a-entity>
-  
-        <!-- Sky sphere -->
-        <a-sky id="sky1" src="#left" stereo="eye:left"></a-sky>
-        <a-sky id="sky2" src="#right" stereo="eye:right"></a-sky>
+    <a-scene>
+      <a-assets>
+        <video id="video" preload="auto"
+               src="img/test2.mp4" playsinline webkit-playsinline
+               width="3840" height="1920" autoplay loop="true"
+               crossOrigin="anonymous" muted></video>
+      </a-assets>
+
+    <!-- here we tell the camera to render (outside VR mode, in monoscopic mode) everything without the 'stereo' component active
+    and if it's active, only render those entities in the 'left' eye -->
+    <a-camera id="camera" lookcontrols position="0 0 0" stereocam="eye:left;">
+      <a-entity position="0 0 -1.5" text="align:center;
+                width:6;
+                wrapCount:100;
+                color: white;
+                value: Click or tap to start VR experience" hide-on-play="#video">
+      </a-entity>
+    </a-camera>
+
+    <a-videosphere  play-on-click src="#video" stereo="eye:left"></a-videosphere>
+    <a-videosphere  play-on-click src="#video" stereo="eye:right"></a-videosphere>
+
   </body>
 </html>
