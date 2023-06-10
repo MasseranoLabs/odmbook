@@ -21,7 +21,7 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #fff;
-  padding-top: 8rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
 }
 
@@ -66,12 +66,6 @@ header.masthead h1 {
   display: inline-block;
   font-size: 80%;
   font-weight: bold;
-}
-.chapter-new{
-  display: inline-block;
-  font-size: 80%;
-  font-weight: bold;
-  color: blue;
 }
 
 .chapter-progress.complete{
@@ -188,18 +182,8 @@ footer.footer {
   text-align: left;
 }
 
-.pricing .col-lg-4{
-  display: flex;
-  grid-auto-rows: 1fr;;
-}
-
-.pricing .card-body{
-  display: flex;
-  flex-direction: column;
-}
-
-.pricing .buy{
-  margin-top: auto;
+.pricing ul.gold{
+    margin-bottom: 205px;
 }
 
 .pricing .text-muted {
@@ -262,13 +246,4 @@ ul.timeline > li:before {
 }
 ul.timeline > li.completed:before {
     background: #22c0e8;
-}
-
-.fade-in{
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-.fade-in:hover{
-  opacity: 0.8;
-  
 }

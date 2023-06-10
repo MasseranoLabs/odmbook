@@ -5,9 +5,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Official website of the book OpenDroneMap: The Missing Guide. A Practical Guide to Drone Mapping Using Free and Open Source Software. Buy the E-book, DRM-Free.">
+  <meta name="description" content="Official website of the book OpenDroneMap: The Missing Guide - 2nd Edition. A Practical Guide to Drone Mapping Using Free and Open Source Software. Buy the E-book, DRM-Free.">
   <meta name="author" content="UAV4GEO">
-
+  <base href="2">
   <title>OpenDroneMap: The Missing Guide</title>
 
   <!-- Bootstrap core CSS -->
@@ -25,29 +25,45 @@
 <body>
   <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <div class="container">
-      <a href="/" class="navbar-brand">OpenDroneMap: The Missing Guide</a>
+      <a href="/2" class="navbar-brand">OpenDroneMap: The Missing Guide</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse order-3" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="samples/sample.pdf"><i class="fa fa-download"></i> Download Sample</a>
+          </li> -->
+          <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="document.location.hash='chapters';">Chapters</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="document.location.hash='timeline';">Timeline</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="document.location.hash='contact';">Contact</a>
+          </li>
+          <li class="nav-item ml-4">
+              <a class="btn btn-primary" href="javascript:;" onclick="document.location.hash='access';"><i class="fa fa-shopping-cart"></i> Buy Draft</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="collapse navbar-collapse order-3" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="samples/sample.pdf"><i class="fa fa-download"></i> Free Sample</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#paperback">Paperback</a>
+                <a class="nav-link" href="javascript:;" onclick="document.location.hash='paperback';">Paperback</a>
             </li>
-            <!--<li class="nav-item">
-                <a class="nav-link" href="#translate" target="_blank">Translate</a>
-	    </li>-->
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="javascript:;" onclick="document.location.hash='contact';">Contact</a>
             </li>
             <li class="nav-item ml-4">
                 <a class="btn btn-primary" href="https://sites.fastspring.com/masseranolabs/product/odmbook">Buy E-Book $29.97</a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -60,26 +76,63 @@
             <h1>A Comprehensive Guide To Use OpenDroneMap</h1>
             <h3>For beginners and professionals</h3>
             <h5>Written by core developer Piero Toffanin</h5>
-            <div class="text-left" style="margin-top: 60px">
-              <a href="https://sites.fastspring.com/masseranolabs/product/odmbook" class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> Buy E-Book $29.97</a> <a href="/samples/sample.pdf" class="btn btn-lg btn-secondary"><i class="fa fa-download"></i> Free Sample</a>
+            
+            <div class="text-left" style="margin-top: 32px">
+              <!-- <a href="https://sites.fastspring.com/masseranolabs/product/odmbook" class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> Buy E-Book $29.97</a> <a href="/samples/sample.pdf" class="btn btn-lg btn-secondary"><i class="fa fa-download"></i> Free Sample</a> -->
+              <a href="http://sites.fastspring.com/masseranolabs/product/odmbookdraft" class="btn btn-lg btn-primary"><i class="fa fa-shopping-cart"></i> Buy Draft $24.97</a> 
+              <!-- <a href="/samples/sample.pdf" class="btn btn-lg btn-secondary"><i class="fa fa-download"></i> Free Sample</a> -->
+              <!-- <a href="javascript:;" onclick="document.location.hash='access';" class="btn btn-lg btn-primary"> <i class="fa fa-unlock"></i> Get Early Access</a> -->
+              <p class="mt-3">This is a draft. The book is finished, but some formatting issues might be present.</p>
+              <!-- <a href="/samples/sample.pdf" class="btn btn-lg btn-secondary"><i class="fa fa-download"></i> Download Sample</a> -->
             </div>
             <ul class="fa-ul mt-3">
-              <li><span class="fa-li"><i class="fa fa-book"></i></span>280 pages, beautifully illustrated, written in simple English</li>
+              <li><span class="fa-li"><i class="fa fa-book"></i></span>306 pages, beautifully illustrated, written in simple English</li>
               <li><span class="fa-li"><i class="fa fa-lock-open"></i></span>Delivered in EPUB, MOBI and PDF format, DRM-free</li>
               <li><span class="fa-li"><i class="fa fa-shield-alt"></i></span>30 days money-back guarantee</li>
               <li><span class="fa-li"><i class="fa fa-heart"></i></span>Supports the development of OpenDroneMap</li>
               
             </ul>
         </div>
-        <div class="col-md-6">
-          <img style="max-height: 520px; " src="/img/book.png" alt="Book Cover" />
+        <div class="col-md-6" style="position: relative">
+          <a href="cover.html" class="fade-in" target="cover-vr">
+            <img style="max-height: 520px; " src="img/book.png" alt="Book Cover" />
+            <img class="d-none  d-xl-block" src="img/arrow-vr.svg" style="max-width: 100px; position: absolute; top: 280px; left: 450px" />
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Icons Grid -->
-  <a name="access"></a>
+<!-- Icons Grid -->
+<a name="access"></a>
+<section class="features-icons bg-light text-center pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <h2>Get Early Access</h2>
+        <h4>The Final E-Book Will Retail for $29.97</h4>
+      </div>
+
+      <div class="col-lg-4 offset-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Draft Access</h5>
+            <h6 class="card-price text-center">$24.97<span class="period"></span></h6>
+            <hr>
+            <ul class="fa-ul gold">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Early access to the book</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Copy of the final e-book (when it's ready)</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>EPUB, MOBI and PDF format, DRM-free</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>30 days money-back guarantee</li>
+            </ul>
+            <a href="http://sites.fastspring.com/masseranolabs/product/odmbookdraft" class="buy btn btn-block btn-primary text-uppercase"><i class="fa fa-shopping-cart"></i> Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- <a name="access"></a>
   <section class="features-icons bg-light text-center pricing">
     <div class="container">
       <div class="row">
@@ -102,9 +155,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   
-  <a name="equal"></a>
+  <!-- <a name="equal"></a>
   <section class="text-center">
     <div class="container equal">
       <div class="row">
@@ -124,9 +177,75 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <a name="chapters"></a>
+  <section class="chapters">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+          <h2>Chapters</h2>
+          
+          <div class="text-center chapters-list">
+            <ul class="text-left">
+              <li>Preface <div class="chapter-progress">[100%]</div></li>
+              <li>Acknowledgement (Early Birds) <div class="chapter-progress">[100%]</div></li>
+
+              <li>Introduction <div class="chapter-progress">[100%]</div></li>
+
+              <li>Installing the Software <div class="chapter-progress">[100%]</div></li>
+              <li>Processing Datasets <div class="chapter-progress">[100%]</div></li>
+              <li>The Processing Pipeline <div class="chapter-progress">[100%]</div></li>
+              <li>Task Options in Depth <div class="chapter-progress">[100%]</div></li>
+              <li>Ground Control Points <div class="chapter-progress">[100%]</div></li>
+              <li>Geolocation Files <div class="chapter-progress">[100%]</div> <div class="chapter-new"> [New!]</div></li>
+              <li>Multispectral Datasets <div class="chapter-progress">[100%]</div> <div class="chapter-new"> [New!]</div></li>
+              <li>Image Masking <div class="chapter-progress">[100%]</div> <div class="chapter-new"> [New!]</div></li>
+              <li>Rolling Shutter Correction <div class="chapter-progress">[100%]</div> <div class="chapter-new"> [New!]</div></li>
+              <li>Camera Calibration <div class="chapter-progress">[100%]</div></li>
+              <li>Report Analysis <div class="chapter-progress">[100%]</div> <div class="chapter-new"> [New!]</div></li>
+              <li>Flying Tips <div class="chapter-progress">[100%]</div></li>
+              <li>The Command Line <div class="chapter-progress">[100%]</div></li>
+              <li>Docker Essentials <div class="chapter-progress">[100%]</div></li>
+              <li>GPU Processing <div class="chapter-progress">[100%]</div> <div class="chapter-new"> [New!]</div></li>
+              <li>Processing Large Datasets <div class="chapter-progress">[100%]</div></li>
+              <li>The NodeODM API <div class="chapter-progress">[100%]</div></li>
+              <li>Automated Processing With Python <div class="chapter-progress">[100%]</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <a name="paperback"></a>
+  <a name="timeline"></a>
+  <section class="timeline text-center bg-light">
+    <div class="container">
+      <h2>Timeline</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-left">
+          <ul class="timeline">
+            <li class="completed">
+              <strong>Second Edition Announced</strong>
+              <strong class="float-right">January, 2023</strong>
+              <p>Early bird access available for $9.97.</p>
+            </li>
+            <li class="completed">
+              <strong>Draft Completed</strong>
+              <strong class="float-right">June, 2023</strong>
+              <p>Draft access available for $24.97.</p>
+            </li>
+            <li>
+              <strong>Book Completed</strong>
+              <strong class="float-right">August, 2023</strong>
+              <p>E-Book is made available for purchase for $29.97.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <a name="paperback"></a>
   <section class="text-center  bg-light">
     <div class="container equal">
       <div class="row">
@@ -140,7 +259,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!--
   <a name="translate"></a>
@@ -168,7 +287,7 @@
     </div>
   </section>
   -->
-  <a name="citation"></a>
+  <!-- <a name="citation"></a>
   <section class="timeline text-center  bg-light">
     <div class="container">
       <h2>Citation</h2>
@@ -189,7 +308,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Testimonials -->
   <!--
@@ -223,21 +342,20 @@
   </section>
   -->
 
-  <a name="second"></a>
+  <a name="first"></a>
   <section class="text-center">
     <div class="container equal">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2>Second Edition</h2>
+          <h2>Previous Editions</h2>
           <i class="fa fa-3x fa-book mt-2 mb-3"></i>
-          <p>Pre-sale now available.</p>
+          <p>Previous editions of this book are now freely available.</p>
 
-          <a href="2/" class="btn btn-secondary">Get Early Access</a>
+          <a href="1/" class="btn btn-secondary">1st Edition</a>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- Call to Action -->
   <a name="contact"></a>
@@ -279,8 +397,7 @@
             </li>
           </ul>
         -->
-          <p class="text-muted small mb-4 mb-lg-0"><div>Made with <span style="color: rgb(255, 63, 63)">❤</span> by <a href="https://uav4geo.com" target="_blank">UAV4GEO</a> - 2019</div></p>
-          <p><small>Trademarks: OpenDroneMap and the OpenDroneMap logo are trademarks or registered trademarks of UAV4GEO and/or its affiliates and may not be used without written permission.</small></p>
+          <p class="text-muted small mb-4 mb-lg-0"><div>Made with <span style="color: rgb(255, 63, 63)">❤</span> by <a href="https://uav4geo.com" target="_blank">UAV4GEO</a> - 2023</div></p>
         </div>
         <!--<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
